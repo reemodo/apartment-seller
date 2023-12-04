@@ -18,7 +18,7 @@ const renderApts = function (apartments) {
 
 const source = $('#menu-template').html();
 const template = Handlebars.compile(source);
-const newHTML = template(menuData);
+const newHTML = template(apartments);
 // append our new html to the page
 $('.results').append(newHTML);
 }
